@@ -4,5 +4,6 @@ require 'shotgun'
 Bundler.require
 
 require './app'
+require './models/wine'
 
-run WineJournal
+run WineList

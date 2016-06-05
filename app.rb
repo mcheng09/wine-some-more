@@ -1,9 +1,9 @@
-class WineJournal < Sinatra::Base
-  WINE_JOURNAL = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
+class WineList < Sinatra::Base
+  WINE_LIST = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
 
   # INDEX page --> List of all the wine submitted
   get '/wines' do
-    @wines = WINE_JOURNAL
+    @wines = WINE_LIST
     erb:index
   end
 
@@ -11,17 +11,17 @@ class WineJournal < Sinatra::Base
   # get "/wines/:id" do
   #
   # end
-  #
+
   # # NEW page --> Redirects to a forms page to submit a wine entry
   # get '/wines/new' do
   #
   # end
-  #
-  # # CREATE --> Creates a new wine entry
+  
+  # CREATE --> Creates a new wine entry
   # post '/wines' do
   #
   # end
-  #
+
   # # UPDATE --> Edits a wine entry
   # put "/wines/:id" do
   #
