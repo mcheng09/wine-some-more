@@ -3,5 +3,10 @@
 <h2><%= @wine.vineyard %></h2>
 <h2><%= @wine.rating %></h2>
 
-<button> Edit </button>
-<button> Delete </button>
+<form action='/wines'>
+  <button> Edit </button>
+</form>
+
+<form action='/wines/<%= @wine.id %>/delete' method='post'>
+  <button> Delete </button>
+</form>

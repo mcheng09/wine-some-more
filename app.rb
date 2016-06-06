@@ -25,7 +25,7 @@ class WineList < Sinatra::Base
   post '/wines' do
     @wine = Wine.new(params[:wine])
     if @wine.save
-      redirect('/wines/#{@wine.id}')
+      redirect('/wines')
     else
       erb(:"wines/new")
     end
@@ -36,9 +36,12 @@ class WineList < Sinatra::Base
   #
   # end
   #
-  # #DESTROY --> Deletes a wine entry
-  # delete "/wines/:id" do
-  #
-  # end
+
+  #DESTROY --> Deletes a wine entry
+  post "/wines/:id/delete" do
+    @wine = Wine.find(params[:id])
+    @wine.destroy
+    redirect('/wines')
+  end
 
 end
