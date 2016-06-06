@@ -1,0 +1,14 @@
+<h2>Wines</h2>
+
+<% @wines.each do |wine| %>
+  <ul>
+    <li>
+      <%= wine.name %> </br>
+      <%= wine.year %> </br>
+      <%= wine.vineyard %> </br>
+      <%= wine.rating %> </br>
+      <%= wine.description %>
+    </li>
+  </ul>
+
+<% end %>

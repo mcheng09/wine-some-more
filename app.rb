@@ -1,10 +1,9 @@
 class WineList < Sinatra::Base
-  WINE_LIST = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
 
   # INDEX page --> List of all the wine submitted
   get '/wines' do
-    @wines = WINE_LIST
-    erb:index
+    @wines = Wine.all
+    erb(:"wines/index")
   end
 
   # NEW page --> Redirects to a forms page to submit a wine entry
