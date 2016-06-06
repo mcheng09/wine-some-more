@@ -7,13 +7,14 @@
 <% @wines.each do |wine| %>
   <ul>
     <li>
+      Name:
       <a href="/wines/<%= wine.id %>">
         <%= wine.name %> </br>
       </a>
-      <%= wine.year %> </br>
-      <%= wine.vineyard %> </br>
-      <%= wine.rating %> </br>
-      <%= wine.description %> </br>
+      Year: <%= wine.year %> </br>
+      Vineyard: <%= wine.vineyard %> </br>
+      Rating: <%= wine.rating %> </br>
+      Description: <%= wine.description %> </br>
 
     </li>
   </ul>

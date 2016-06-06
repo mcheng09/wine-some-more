@@ -1,12 +1,17 @@
-<h2><%= @wine.name %></h2>
-<h2><%= @wine.year %></h2>
-<h2><%= @wine.vineyard %></h2>
-<h2><%= @wine.rating %></h2>
+<h2>Name: <%= @wine.name %></h2>
+<h2>Year: <%= @wine.year %></h2>
+<h2>Vineyard: <%= @wine.vineyard %></h2>
+<h2>Rating: <%= @wine.rating %></h2>
+<h2>Desciption: <%= @wine.description %></h2>
 
-<form action='/wines'>
+<form action='/wines/<%= @wine.id %>/edit' method='get'>
   <button> Edit </button>
 </form>
 
 <form action='/wines/<%= @wine.id %>/delete' method='post'>
   <button> Delete </button>
+</form>
+
+<form action='/wines'>
+  <button> Back to Winelist </button>
 </form>

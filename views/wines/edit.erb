@@ -1,0 +1,22 @@
+<h2>Edit Wine Entry</h2>
+
+<form action='/wines/<%= "#{@wine.id}" %>' method="post">
+
+  <label for="wine[name]">Name:</label>
+  <input name="wine[name]" value='<%= "#{@wine.name}" %>'>
+
+  <label for="wine[year]">Year:</label>
+  <input name="wine[year]" value='<%= "#{@wine.year}" %>'>
+
+  <label for="wine[vineyard]">Vineyard:</label>
+  <input name="wine[vineyard]" value='<%= "#{@wine.vineyard}" %>'>
+
+  <label for="wine[rating]">Rating:</label>
+  <input name="wine[rating]" value='<%= "#{@wine.rating}" %>'>
+
+  <label for="wine[description]">Description:</label>
+  <input name="wine[description]" value='<%= "#{@wine.description}" %>'>
+
+  <input type="submit" value="Edit">
+
+</form>
