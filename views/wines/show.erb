@@ -1,8 +1,13 @@
+<div class="picture">
+  <img src="<%= @wine.photo_url %>">
+</div>
+
 <h2>Name: <%= @wine.name %></h2>
 <h2>Year: <%= @wine.year %></h2>
 <h2>Vineyard: <%= @wine.vineyard %></h2>
 <h2>Rating: <%= @wine.rating %></h2>
 <h2>Desciption: <%= @wine.description %></h2>
+<h2>Price: <%= @wine.price %></h2>
 
 <form action='/wines/<%= @wine.id %>/edit' method='get'>
   <button> Edit </button>

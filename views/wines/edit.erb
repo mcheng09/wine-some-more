@@ -17,6 +17,12 @@
   <label for="wine[description]">Description:</label>
   <input name="wine[description]" value='<%= "#{@wine.description}" %>'>
 
+  <label for="wine[price]">Price:</label>
+  <input name="wine[price]" value='<%= "#{@wine.price}" %>'>
+
+  <label for="wine[photo_url]">Photo: </label>
+  <input type="text" name="wine[photo_url]" value="<%= "#{@wine.photo_url}" %>">
+
   <input type="submit" value="Edit">
 
 </form>
