@@ -7,24 +7,25 @@ class WineList < Sinatra::Base
     erb:index
   end
 
-  # # SHOW --> Shows just one item on the winelist
-  # get "/wines/:id" do
-  #
-  # end
-
   # NEW page --> Redirects to a forms page to submit a wine entry
-  # Ran tux while creating new wine. Console confirmed a Commit to the db
+  # Ran shotgun while creating new wine. Console confirmed a Commit to the db
   # Wine.all in tux revealed the added entry
   get '/wines/new' do
     @wine = Wine.new
     erb(:"wines/new")
   end
 
+  # SHOW --> Shows just one item on the winelist
+  get '/wines/:id' do
+    @wine = Wine.find(params[:id])
+    erb(:"wines/show")
+  end
+
   # CREATE --> Creates a new wine entry
   post '/wines' do
     @wine = Wine.new(params[:wine])
     if @wine.save
-      redirect("/wines")
+      redirect("/wines/#{@wine.id}")
     else
       erb(:"wines/new")
     end
