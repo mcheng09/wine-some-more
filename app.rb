@@ -12,11 +12,12 @@ class WineList < Sinatra::Base
   #
   # end
 
-  # # NEW page --> Redirects to a forms page to submit a wine entry
-  # get '/wines/new' do
-  #
-  # end
-  
+  # NEW page --> Redirects to a forms page to submit a wine entry
+  get '/wines/new' do
+    @wine = Wine.new
+    erb(:"wines/new")
+  end
+
   # CREATE --> Creates a new wine entry
   # post '/wines' do
   #
