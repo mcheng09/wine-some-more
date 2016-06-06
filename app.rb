@@ -1,4 +1,5 @@
 class WineList < Sinatra::Base
+  WINE_LIST = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
 
   # INDEX page --> List of all the wine submitted
   get '/wines' do
@@ -24,7 +25,7 @@ class WineList < Sinatra::Base
   post '/wines' do
     @wine = Wine.new(params[:wine])
     if @wine.save
-      redirect("/wines/#{@wine.id}")
+      redirect('/wines/#{@wine.id}')
     else
       erb(:"wines/new")
     end

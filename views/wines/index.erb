@@ -1,13 +1,16 @@
-<h2>Wines</h2>
+<h2>Wine List</h2>
 
 <% @wines.each do |wine| %>
   <ul>
     <li>
-      <%= wine.name %> </br>
+      <a href="/wines/<%= wine.id %>">
+        <%= wine.name %> </br>
+      </a>
       <%= wine.year %> </br>
       <%= wine.vineyard %> </br>
       <%= wine.rating %> </br>
-      <%= wine.description %>
+      <%= wine.description %> </br>
+
     </li>
   </ul>
 
