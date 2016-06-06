@@ -15,7 +15,6 @@ Rake
 ActiveRecord
 PSQL
 Tux
-Bootstrap
 
 ### User Stories/WireFrames
 Please see the link before to view my Trello page! The contents should include my user stories and wireframe.

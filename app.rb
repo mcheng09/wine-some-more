@@ -13,15 +13,22 @@ class WineList < Sinatra::Base
   # end
 
   # NEW page --> Redirects to a forms page to submit a wine entry
+  # Ran tux while creating new wine. Console confirmed a Commit to the db
+  # Wine.all in tux revealed the added entry
   get '/wines/new' do
     @wine = Wine.new
     erb(:"wines/new")
   end
 
   # CREATE --> Creates a new wine entry
-  # post '/wines' do
-  #
-  # end
+  post '/wines' do
+    @wine = Wine.new(params[:wine])
+    if @wine.save
+      redirect("/wines")
+    else
+      erb(:"wines/new")
+    end
+  end
 
   # # UPDATE --> Edits a wine entry
   # put "/wines/:id" do
