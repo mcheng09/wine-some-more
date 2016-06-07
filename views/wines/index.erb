@@ -1,25 +1,47 @@
-<h2>Wine List</h2>
+<!DOCTYPE html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Wine List</h1>
+</div>
 </br>
 
-<form action="/wines/new">
+<form action="/wines/new" class="addbutton">
   <button>Add a wine!</button>
 </form>
 </br>
 
 <% @wines.each do |wine| %>
-  <ul>
-    <li>
-      Name:
-      <a href="/wines/<%= wine.id %>">
-        <%= wine.name %> </br>
-      </a>
-      Year: <%= wine.year %> </br>
-      Vineyard: <%= wine.vineyard %> </br>
-      Rating: <%= wine.rating %> </br>
+<div class="row">
+  <div class ="col-xs-7 entrycontainer">
+    <div class ="col-xs-6">
+      <ul>
+        <li>
+          <strong> Name: </strong>
+          <a href="/wines/<%= wine.id %>">
+            <%= wine.name %> </br>
+          </a>
+          <strong> Year: </strong><%= wine.year %> </br>
+          <strong> Vineyard: </strong> <%= wine.vineyard %> </br>
+          <strong> Rating (1-10): </strong><%= wine.rating %> </br>
+          <strong> Price: </strong><%= wine.price %></br>
+          <div class="indexpicture">
+            <img src="<%= wine.photo_url %>">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class ="col-xs-6">
       Description: <%= wine.description %> </br>
-      Price: <%= wine.price %>
-
-    </li>
-  </ul>
+    </div>
+  </div>
+</div>
 
 <% end %>
+
+</body>
+</html>
