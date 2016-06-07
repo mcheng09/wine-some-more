@@ -3,27 +3,39 @@
 <!-- POST back to index page -->
 <form action="/wines" method="post">
 
-  <label for="wine[name]">Name:</label>
-  <input name="wine[name]">
-
-  <label for="wine[year]">Year:</label>
-  <input name="wine[year]">
-
-  <label for="wine[vineyard]">Vineyard:</label>
-  <input name="wine[vineyard]">
-
-  <label for="wine[rating]">Rating:</label>
-  <input name="wine[rating]">
-
-  <label for="wine[description]">Description:</label>
-  <input name="wine[description]">
-
-  <label for="wine[price]">Price:</label>
-  <input name="wine[price]">
-
-  <label for="wine[photo_url]">Photo: </label>
-  <input type="text" name="wine[photo_url]" placeholder= "photo url">
-
-  <input type="submit" value="Create">
-
+  <div class="row">
+    <div class="col-xs-3">
+      <label for="wine[name]">Name:</label>
+      <input name="wine[name]">
+    </div>
+    <div class="col-xs-3">
+      <label for="wine[year]">Year:</label>
+      <input name="wine[year]">
+    </div>
+    <div class="col-xs-3">
+      <label for="wine[vineyard]">Vineyard:</label>
+      <input name="wine[vineyard]">
+    </div>
+    <div class="col-xs-3">
+      <label for="wine[rating]">Rating:</label>
+      <input name="wine[rating]">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <label for="wine[description]">Description:</label>
+      <input name="wine[description]">
+    </div>
+    <div class="col-xs-3">
+      <label for="wine[price]">Price:</label>
+      <input name="wine[price]">
+    </div>
+    <div class="col-xs-3">
+      <label for="wine[photo_url]">Photo: </label>
+      <input type="text" name="wine[photo_url]" placeholder= "photo url">
+    </div>
+    <div class="col-xs-3">
+      <input type="submit" value="Create">
+    </div>
+  </div>
 </form>
