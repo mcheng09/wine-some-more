@@ -1,0 +1,30 @@
+body {
+  background: url("https://www.vinevera.com/media/wysiwyg/Vine-Vera-Chianti-Theme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.greeting h1 {
+  font-family: 'Kaushan Script', cursive;
+  color: darkgreen;
+}
+
+.greeting h2 {
+  font-size: 14px;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.container-fluid {
+  background: darkgreen;
+}
+
+.navtext {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
