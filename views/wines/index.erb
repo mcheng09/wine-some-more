@@ -1,8 +1,10 @@
 <h2>Wine List</h2>
+</br>
 
 <form action="/wines/new">
   <button>Add a wine!</button>
 </form>
+</br>
 
 <% @wines.each do |wine| %>
   <ul>
@@ -15,7 +17,7 @@
       Vineyard: <%= wine.vineyard %> </br>
       Rating: <%= wine.rating %> </br>
       Description: <%= wine.description %> </br>
-      Price: <%= wine.price %> 
+      Price: <%= wine.price %>
 
     </li>
   </ul>

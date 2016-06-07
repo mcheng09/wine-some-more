@@ -30,8 +30,11 @@ class WineList < Sinatra::Base
   # CREATE --> Creates a new wine entry
   post '/wines' do
     @wine = Wine.new(params[:wine])
-    @wine.save
-    redirect('/wines')
+    if @wine.save
+      redirect('/wines')
+    else
+      erb(:"wines/new")
+    end
   end
 
   # EDIT --> Redirects to the edits form page
