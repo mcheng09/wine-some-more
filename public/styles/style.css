@@ -5,7 +5,11 @@ body {
 }
 
 img {
-  width: 100px;
+  width: 120px;
+}
+
+textarea {
+  resize: none;
 }
 
 .greeting h1 {
@@ -40,7 +44,6 @@ img {
 }
 
 .entrycontainer {
-  /*background: black;*/
   background: linear-gradient(bottom, rgba(255,255,255,.5), rgba(255,255,255,.5));
   background: -webkit-linear-gradient(bottom, rgba(255,255,255,.5), rgba(255,255,255,.5));
   border-radius: 25px;
@@ -50,4 +53,16 @@ img {
 .addbutton {
   position: relative;
   left: 5%;
+}
+
+.entry {
+  font-size: 16px;
+}
+
+.entrydescription {
+  font-size: 14px;
+}
+
+.h1, h1 {
+    font-size: 50px;
 }

@@ -1,41 +1,55 @@
-<h2>Recommend Wine!</h2>
+<div class="col-xs-12">
+  <h2>Recommend Wine!</h2></br></br>
+</div>
 
 <!-- POST back to index page -->
 <form action="/wines" method="post">
-
   <div class="row">
-    <div class="col-xs-3">
+    <div class="col-xs-6">
+    <div class="col-xs-4">
       <label for="wine[name]">Name:</label>
       <input name="wine[name]">
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-4">
       <label for="wine[year]">Year:</label>
-      <input name="wine[year]">
+      <input type="number" name="wine[year]">
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-4">
       <label for="wine[vineyard]">Vineyard:</label>
       <input name="wine[vineyard]">
     </div>
-    <div class="col-xs-3">
-      <label for="wine[rating]">Rating:</label>
-      <input name="wine[rating]">
-    </div>
   </div>
+</div>
+</div>
   <div class="row">
-    <div class="col-xs-3">
-      <label for="wine[description]">Description:</label>
-      <input name="wine[description]">
-    </div>
-    <div class="col-xs-3">
+    <div class="col-xs-6">
+    <div class="col-xs-4">
       <label for="wine[price]">Price:</label>
       <input name="wine[price]">
     </div>
-    <div class="col-xs-3">
-      <label for="wine[photo_url]">Photo: </label>
-      <input type="text" name="wine[photo_url]" placeholder= "photo url">
+    <div class="col-xs-4">
+      <label for="wine[rating]">Rating:</label>
+      <input type="number" name="wine[rating]">
     </div>
-    <div class="col-xs-3">
-      <input type="submit" value="Create">
+    <div class="col-xs-4">
+      <label for="wine[photo_url]">Photo: </label>
+      <input type="text" name="wine[photo_url]" placeholder= "put in photo url">
     </div>
   </div>
+  </div></br></br>
+  <div class="row">
+    <div class="col-xs-6">
+    <div class="col-xs-4">
+      <label for="wine[description]">Experience:</label>
+      <textarea rows="6" cols="70" name="wine[description]"></textarea>
+    </div>
+  </div>
+</div></br>
+  <div class="row">
+    <div class="col-xs-6">
+    <div class="col-xs-2">
+      <input type="submit" value="Add Entry">
+    </div>
+  </div>
+</div>
 </form>

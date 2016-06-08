@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-</head>
-
 <body>
 
 <div class="header">
@@ -17,26 +12,26 @@
 
 <% @wines.each do |wine| %>
 <div class="row">
-  <div class ="col-xs-7 entrycontainer">
+  <div class ="col-xs-8 entrycontainer">
     <div class ="col-xs-6">
-      <ul>
-        <li>
-          <strong> Name: </strong>
-          <a href="/wines/<%= wine.id %>">
-            <%= wine.name %> </br>
-          </a>
-          <strong> Year: </strong><%= wine.year %> </br>
-          <strong> Vineyard: </strong> <%= wine.vineyard %> </br>
-          <strong> Rating (1-10): </strong><%= wine.rating %> </br>
-          <strong> Price: </strong><%= wine.price %></br>
-          <div class="indexpicture">
-            <img src="<%= wine.photo_url %>">
-          </div>
-        </li>
-      </ul>
+      <div class = "entry">
+        <ul>
+            <strong> Name: </strong>
+            <a href="/wines/<%= wine.id %>">
+              <%= wine.name %> </br>
+            </a>
+            <strong> Year: </strong><%= wine.year %> </br>
+            <strong> Vineyard: </strong> <%= wine.vineyard %> </br>
+            <strong> Rating (1-10): </strong><%= wine.rating %> </br>
+            <strong> Price: </strong><%= wine.price %></br>
+            <div class="indexpicture">
+              <img src="<%= wine.photo_url %>">
+            </div>
+        </ul>
+      </div>
     </div>
-    <div class ="col-xs-6">
-      Description: <%= wine.description %> </br>
+    <div class ="col-xs-6 entrydescription">
+      <strong>Experience:</strong> <%= wine.description %> </br>
     </div>
   </div>
 </div>
