@@ -1,7 +1,7 @@
 # Wine-Some-More
 Hello there! My name is Mike Cheng and I'd like to present to you my second project for the WDI program.
 
-Wine Some More is an user-friendly app that can be used to review and recommend wine you may have drank. Did you drink an amazing vintage last night? Post it up on the app so that everyone can know about it!
+Wine Some More is an user-friendly app that can be used to review and recommend wine you may have drank. Did you drink an amazing vintage last night? Post it up on the app so that everyone can know about it!!
 
 
 ### App Link
