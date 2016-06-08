@@ -94,6 +94,11 @@ blockquote {
   font-family: 'Roboto', sans-serif;
 }
 
+.timestamps {
+  text-align:right;
+  font-size: 10px;
+}
+
 #entrytitle {
   text-align: center;
   font-size: 30px;
@@ -102,9 +107,4 @@ blockquote {
 
 #entryexp {
   text-align: center;
-}
-
-#timestamps {
-  text-align:center;
-  font-size: 10px;
 }

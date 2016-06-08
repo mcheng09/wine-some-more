@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160606214358) do
+ActiveRecord::Schema.define(version: 20160608181020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "vineyards", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.string "yearbuilt"
+    t.string "founder"
+    t.string "currentowner"
+    t.string "vineyard_photo_url"
+    t.string "history"
+    t.string "thingstodo"
+    t.string "review"
+  end
 
   create_table "wines", force: :cascade do |t|
     t.string   "name"
