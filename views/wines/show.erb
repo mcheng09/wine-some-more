@@ -1,22 +1,40 @@
-<div class="show_pic">
-  <img src="<%= @wine.photo_url %>">
+<div class = "col-xs-6">
+<div class="entryshow">
+<p id="entrytitle"><strong><%= @wine.year %>  <%= @wine.name %></strong></p>
+<div class="row">
+  <div class="col-xs-6">
+<p class="content"><strong>Vineyard: </strong><%= @wine.vineyard %></p>
+<p class="content"><strong>Price: </strong><%= @wine.price %></p>
+<p class="content"><strong>Rating (1-10): </strong><%= @wine.rating %></p>
 </div>
+<div class="col-xs-2 col-xs-offset-2">
+  <div class="show_pic">
+    <img src="<%= @wine.photo_url %>">
+  </div>
+</div>
+</div>
+<p id="entryexp"><strong>Experience:</p>
+<p></strong><blockquote id="experiencetext"><%= @wine.description %></blockquote></p>
 
-<h2>Name: <%= @wine.name %></h2>
-<h2>Year: <%= @wine.year %></h2>
-<h2>Vineyard: <%= @wine.vineyard %></h2>
-<h2>Rating: <%= @wine.rating %></h2>
-<h2>Experience: <%= @wine.description %></h2>
-<h2>Price: <%= @wine.price %></h2>
 
+</br></br>
+
+<div class = "row">
+  <div class = "col-xs-4">
+    <form action='/wines'>
+      <button> Back to Winelist </button>
+    </form>
+  </div>
+  <div class = "col-xs-4">
 <form action='/wines/<%= @wine.id %>/edit' method='get'>
-  <button> Edit </button>
+  <button> Edit Wine Entry</button>
 </form>
-
+</div>
+<div class = "col-xs-4">
 <form action='/wines/<%= @wine.id %>/delete' method='post'>
-  <button> Delete </button>
+  <button> Delete Wine Entry </button>
 </form>
-
-<form action='/wines'>
-  <button> Back to Winelist </button>
-</form>
+</div>
+</div>
+</div>
+</div>
