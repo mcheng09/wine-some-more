@@ -1,0 +1,20 @@
+<div class="header">
+  <h1>Vineyard List</h1>
+</div></br>
+
+<% @vineyards.each do |vineyard| %>
+<ul>
+  <li>
+    Name: <%= vineyard.name %> </br>
+    Location: <%= vineyard.location %> </br>
+    Year Built: <%= vineyard.yearbuilt %> </br>
+    Founder: <%= vineyard.founder %> </br>
+    Current Owner: <%= vineyard.currentowner %> </br>
+    Photo: <%= vineyard.vineyard_photo_url %> </br>
+    History: <%= vineyard.history %> </br>
+    Things To Do: <%= vineyard.thingstodo %> </br>
+    Review: <%= vineyard.review %> </br>
+
+  </li>
+</ul>
+<% end %>

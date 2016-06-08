@@ -1,6 +1,7 @@
 class WineList < Sinatra::Base
   # Dummy data
   # WINE_LIST = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
+  VINEYARD_LIST = ["Beringer", "Bordeaux", "St. Francis"]
 
   #HOMEPAGE -->
   get '/' do
@@ -11,6 +12,11 @@ class WineList < Sinatra::Base
   get '/wines' do
     @wines = Wine.all
     erb(:"wines/index")
+  end
+
+  get '/vineyards' do
+    @vineyards = Vineyard.all
+    erb(:"vineyards/index")
   end
 
   # NEW page --> Redirects to a forms page to submit a wine entry
