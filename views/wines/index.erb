@@ -17,7 +17,13 @@
             <%= wine.name %> </br>
           </a>
           <strong> Year: </strong><%= wine.year %> </br>
-          <strong> Vineyard: </strong> <%= wine.vineyard %> </br>
+          <strong> Vineyard: </strong>
+          <% if wine.vineyard %>
+            <%= wine.vineyard.name %>
+          <% else %>
+            <%= "No Vineyard" %>
+          <% end %>
+          </br>
           <strong> Rating (1-10): </strong><%= wine.rating %> </br>
           <strong> Price: </strong><%= wine.price %></br>
           <div class="indexpicture">
