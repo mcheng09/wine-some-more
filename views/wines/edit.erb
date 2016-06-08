@@ -1,58 +1,53 @@
 <div class="col-xs-12">
-<h2>Edit Wine Entry</h2>
+  <h3>Edit Wine Entry</h3>
 </div>
 
 <form action='/wines/<%= "#{@wine.id}" %>' method="post">
   <div class="row">
     <div class="col-xs-6">
       <div class="col-xs-4">
-
-
-  <label for="wine[name]">Name:</label>
-  <input name="wine[name]" value='<%= "#{@wine.name}" %>'>
-</div>
-<div class="col-xs-4">
-  <label for="wine[year]">Year:</label>
-  <input name="wine[year]" value='<%= "#{@wine.year}" %>'>
-</div>
-<div class="col-xs-4">
-  <label for="wine[vineyard]">Vineyard:</label>
-  <input name="wine[vineyard]" value='<%= "#{@wine.vineyard}" %>'>
-</div>
-</div>
-</div>
-<div class="row">
-  <div class="col-xs-6">
-    <div class="col-xs-4">
-  <label for="wine[rating]">Rating:</label>
-  <input name="wine[rating]" value='<%= "#{@wine.rating}" %>'>
-</div>
-<div class="col-xs-4">
-  <label for="wine[price]">Price:</label>
-  <input name="wine[price]" value='<%= "#{@wine.price}" %>'>
-</div>
-<div class="col-xs-4">
-<label for="wine[photo_url]">Photo: </label>
-<input type="text" name="wine[photo_url]" value="<%= "#{@wine.photo_url}" %>">
-</div>
-</div>
-</div>
-
-<div class="row">
-  <div class="col-xs-6">
-  <div class="col-xs-4">
-    <label for="wine[description]">Description:</label>
-    <textarea rows="6" cols="70" name="wine[description]"> <%= "#{@wine.description}" %></textarea>
+        <label for="wine[name]">Name:</label>
+        <input name="wine[name]" value='<%= "#{@wine.name}" %>'>
+      </div>
+      <div class="col-xs-4">
+        <label for="wine[year]">Year:</label>
+        <input name="wine[year]" value='<%= "#{@wine.year}" %>'>
+      </div>
+      <div class="col-xs-4">
+        <label for="wine[vineyard]">Vineyard:</label>
+        <input name="wine[vineyard]" value='<%= "#{@wine.vineyard}" %>'>
+      </div>
+    </div>
   </div>
-</div>
-</div></br>
-
-<div class="row">
-  <div class="col-xs-6">
-  <div class="col-xs-4">
-  <input type="submit" value="Edit Wine Entry">
-</div>
-</div>
-</div>
-
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="col-xs-4">
+        <label for="wine[rating]">Rating:</label>
+        <input name="wine[rating]" value='<%= "#{@wine.rating}" %>'>
+      </div>
+      <div class="col-xs-4">
+        <label for="wine[price]">Price:</label>
+        <input name="wine[price]" value='<%= "#{@wine.price}" %>'>
+      </div>
+      <div class="col-xs-4">
+        <label for="wine[photo_url]">Photo: </label>
+        <input type="text" name="wine[photo_url]" value="<%= "#{@wine.photo_url}" %>">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="col-xs-4">
+        <label for="wine[description]">Description:</label>
+        <textarea rows="6" cols="70" name="wine[description]"> <%= "#{@wine.description}" %></textarea>
+      </div>
+    </div>
+  </div></br>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="col-xs-4">
+        <input type="submit" value="Edit Wine Entry">
+      </div>
+    </div>
+  </div>
 </form>

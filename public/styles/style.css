@@ -8,6 +8,10 @@ h2 {
   font-size: 12px;
 }
 
+h3 {
+  font-family: 'Kaushan Script', cursive;
+}
+
 p {
   font-size: 20px;
 }
@@ -94,10 +98,6 @@ blockquote {
   text-align: center;
   font-size: 30px;
   font-family: 'Great Vibes', cursive;
-}
-
-#experiencetext{
-
 }
 
 #entryexp {
