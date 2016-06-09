@@ -1,3 +1,4 @@
+require 'sinatra'
 class WineList < Sinatra::Base
   # Dummy data
   # WINE_LIST = ["2008 Beringer Nightingale Napa Valley","2009 Inglenook Rubicon", "2012 Etude Cabernet"]
