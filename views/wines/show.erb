@@ -15,7 +15,7 @@
     </div>
     <p id="entryexp"><strong>Experience:</p>
     <p></strong><blockquote id="experiencetext"><%= @wine.description %></blockquote></p>
-    <p id="timestamps">Entry Created: <%= @wine.created_at %> Entry Updated: <% @wine.updated_at %> </p></br></br>
+    <p id="timestamps"><strong>Posted By: </strong><%= @wine.user %>, <strong>Entry Created: </strong><%= @wine.created_at %></p></br></br>
     <div class = "row">
       <div class = "col-xs-4">
         <form action='/wines'>
