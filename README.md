@@ -40,7 +40,7 @@ https://trello.com/b/zZzbFkUY/wine-some-more
 
 - View the vineyards from which your wine came from. (In Progress)
 
-### How To contribute.
+### How To Contribute
 
 #### Running the app on a local server:
 
@@ -69,7 +69,7 @@ https://trello.com/b/zZzbFkUY/wine-some-more
 - Shoutout to Matt for helping out with the delete function
 - Shoutout to Annabelle for helping me upload it onto Heroku as well as some other little glitches.
 - Shoutout to the instructors for guiding us along our project
-- Shoutout to everyone else just because. We put in our all and did a fantastic job. 
+- Shoutout to everyone else just because. We put in our all and did a fantastic job.
 
 
 ### MORE TO COME!

@@ -98,6 +98,12 @@ blockquote {
   font-family: 'Roboto', sans-serif;
 }
 
+.wineoftheday {
+  background: linear-gradient(bottom, rgba(255,255,255,.5), rgba(255,255,255,.5));
+  background: -webkit-linear-gradient(bottom, rgba(255,255,255,.5), rgba(255,255,255,.5));
+  border-radius: 25px;
+}
+
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
@@ -131,4 +137,14 @@ blockquote {
 
 #experiencetext {
   text-align: center;
+}
+
+#wineofthedaytitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}
+
+#thewineoftheday {
+  font-family: 'Courgette', cursive;
+  font-size: 24px;
 }
