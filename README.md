@@ -12,13 +12,14 @@ Github Link:
 https://github.com/mcheng09/wine-some-more
 
 ### Technologies Used
-Ruby
-Sinatra
-Rake
-ActiveRecord
-PSQL
-Tux
-Bootstrap
+
+- Ruby
+- Sinatra
+- Rake
+- ActiveRecord
+- PSQL
+- Tux
+- Bootstrap
 
 ### User Stories/WireFrames
 Please see the link before to view my Trello page! The contents should include my user stories and wireframe.
@@ -27,18 +28,17 @@ https://trello.com/b/zZzbFkUY/wine-some-more
 
 ### Features
 
-Add a wine recommendation that you want your friend to try.
+- Add a wine recommendation that you want your friend to try.
 
-Edit a wine recommendation.
+- Edit a wine recommendation.
 
-Delete a wine recommendation.
+- Delete a wine recommendation.
 
-View wine that your friend recommended.
+- View wine that your friend recommended.
 
-Rate it! Upload a picture of it! These features are included.
+- Rate it! Upload a picture of it! These features are included.
 
-View the vineyards from which your wine came from.
-(In Progress)
+- View the vineyards from which your wine came from. (In Progress)
 
 ### How To contribute.
 
@@ -65,11 +65,11 @@ View the vineyards from which your wine came from.
 
 ### Shoutouts
 
-Shoutout to Emilio for supplying me with good resources for Bootstrap
-Shoutout to Matt for helping out with the delete function
-Shoutout to Annabelle for helping me upload it onto Heroku as well as some other little glitches.
-Shoutout to the instructors for guiding us along our project
-Shoutout to everyone else just because. We put in our all and did a fantastic job. 
+- Shoutout to Emilio for supplying me with good resources for Bootstrap
+- Shoutout to Matt for helping out with the delete function
+- Shoutout to Annabelle for helping me upload it onto Heroku as well as some other little glitches.
+- Shoutout to the instructors for guiding us along our project
+- Shoutout to everyone else just because. We put in our all and did a fantastic job. 
 
 
 ### MORE TO COME!
