@@ -19,17 +19,17 @@
     <div class = "row">
       <div class = "col-xs-4">
         <form action='/wines'>
-          <button> Back to Winelist </button>
+          <button class="btn btn-primary"> Back to Winelist </button>
         </form>
       </div>
       <div class = "col-xs-4">
         <form action='/wines/<%= @wine.id %>/edit' method='get'>
-          <button> Edit Wine Entry</button>
+          <button class="btn btn-warning"> Edit Wine Entry</button>
         </form>
       </div>
       <div class = "col-xs-4">
         <form action='/wines/<%= @wine.id %>/delete' method='post'>
-          <button> Delete Wine Entry </button>
+          <button class="btn btn-danger"> Delete Wine Entry </button>
         </form>
       </div>
     </div>

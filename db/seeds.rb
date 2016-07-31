@@ -8,7 +8,7 @@ Wine.create({
   vineyard: "Cheng",
   rating: "5",
   description: "A savory, rich, bold taste. Oak-barrel after-taste.",
-  photo_url: "",
+  photo_url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/1931507_10207175242713685_7705771188921658429_n.jpg?oh=27f0c6afad52ffb8f2c48bc6c4f368ec&oe=582C0959",
   price: "100",
   user: "mcheng09",
   })
